@@ -19,6 +19,7 @@ logs/**
 
 # also keep all .gitkeep files
 !.gitkeep
+3
 
 # also keep the example dataset
 !data/01_raw/iris.csv
@@ -157,3 +158,5 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+# ignor all zip file
+*zip

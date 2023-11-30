@@ -1,8 +1,3 @@
-import os, sys
-import re
-import glob
-import datetime
-from collections import Counter
 import json
 import argparse
 import os
@@ -10,11 +5,13 @@ import io
 import shutil
 import copy
 from datetime import datetime
+from pick import pick
 from time import sleep
 
+from dataclasses import dataclass
 # Create wrapper classes for using slack_sdk in place of slacker
 
-class DataLoader:
+class SlackDataLoader:
     '''
 
     Slack exported data IO class.
@@ -53,8 +50,6 @@ class DataLoader:
 
         self.users = self.get_users()
     
-    
-
 
     def get_users(self):
         '''
