@@ -158,5 +158,5 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-# ignor all zip file
+#ignor all zip file
 *zip
